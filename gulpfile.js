@@ -82,20 +82,6 @@ gulp.task('font', function() {
         .pipe(notify("Font regenerated!"))
 });
 
-gulp.task('font', function() {
-    return gulp.src('assets/img/icons/*.svg')
-        .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-        .pipe(fontcustom({
-            font_name: fontName,
-            preprocessor_path: '../fonts/customfont',
-            templates: ['preview','scss']
-        }))
-        .pipe(gulp.dest("assets/fonts/customfont"))
-        .pipe(notify("Font regenerated!"))
-});
-
-
-
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('assets/js/main.js', ['lint']);
