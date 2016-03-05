@@ -3,10 +3,9 @@
 var devUrl = false;
 // var devUrl = "devsite.dev";
 
-var fontName = "knockfont";
+var fontName = "fontname";
 var jsFiles = [
             './assets/js/libs.js',
-            './assets/js/modernizr-custom.js',
             './assets/js/main.js'
         ];
 var prefixString= ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'];
@@ -138,5 +137,4 @@ gulp.task('build', ['bower', 'font', 'clean'], function(){
 
 
 // Default Task
-//gulp.task('default', ['sass', 'bower', 'scripts', 'lint', 'browser-sync', 'watch']);
 gulp.task('default', ['sass', 'bower', 'scripts', 'lint', 'font', 'browser-sync', 'watch']);

@@ -2,3 +2,6 @@ bower_components
 .DS_Store
 dist
 node_modules
+.idea
+.fontcustom-manifest.json
+knockfont.eot
