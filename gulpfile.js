@@ -137,4 +137,4 @@ gulp.task('build', ['bower', 'font', 'clean'], function(){
 
 
 // Default Task
-gulp.task('default', ['sass', 'bower', 'scripts', 'lint', 'font', 'browser-sync', 'watch']);
+gulp.task('default', ['sass', 'bower', 'scripts', 'lint', 'browser-sync', 'watch']);
